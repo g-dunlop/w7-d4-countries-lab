@@ -6,11 +6,10 @@ const CountryDetail = ({selectedCountry}) => {
     return (
         <div>
             <h3>{selectedCountry.name}</h3> 
-            <p></p>
-            <img scr={selectedCountry.flags.png}/>
+            <p>{selectedCountry.region}</p>
+            <img src={selectedCountry.flags.png}/>
         </div>
     )
-
 }
 
 export default CountryDetail;
